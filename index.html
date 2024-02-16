@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles.css">
+    <title>HTML: Technical Documentation for Begginers</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        <h1>HTML: Documentation for begginers</h1>
+        <hr>
+        <ul>
+          <li><a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a></li>
+          <li><a class="nav-link" href="#What_is_HTML?">What is HTML?</a></li>
+          <li><a class="nav-link" href="#Nesting_Elements">Nesting Elements</a></li>
+          <li><a class="nav-link" href="#Void_Elements">Void Elements</a></li>
+          <li><a class="nav-link" href="#Attributes">Attributes</a></li>
+          <li><a class="nav-link" href="#HTML_Comments">HTML Comments</a></li>
+          <li><a class="nav-link" href="#Learn_more_about_HTML">Learn more about HTML</a></li>
+        </ul>
+      </header>
+    </nav>
+      <!--Introduction to HTML starts-->
+      <main id="main-doc">
+        <section class="main-section" id="Introduction_to_HTML">
+          <header>Introduction to HTML</header>
+            <p>
+              At its heart, HTML is a language made up of elements, which can be
+              applied to pieces of text to give them different meaning in a document
+              (Is it a paragraph? Is it a bulleted list? Is it part of a table?),
+              structure a document into logical sections (Does it have a header?
+              Three columns of content? A navigation menu?), and embed content such
+              as images and videos into a page. This module will introduce the first
+              two of these and introduce fundamental concepts and syntax you need to
+              know to understand HTML.
+            </p>
+        </section>
+        <!--Introduction to HTML ends-->
+        <!--What is HTML starts-->
+        <section class="main-section" id="What_is_HTML?">
+          <header>What is HTML?</header>
+            <p>HTML (HyperText Markup Language) is a markup language that tells web
+              browsers how to structure the web pages you visit. It can be as complicated
+              or as simple as the web developer wants it to be. HTML consists of a series
+              of elements, which you use to enclose, wrap, or mark up different parts
+              of content to make it appear or act in a certain way. The enclosing tags
+              can make content into a hyperlink to connect to another page, italicize
+              words, and so on. For example, consider the following line of text:</p>
+            <div class="code-container">
+              <code><span class="codeType">HTML is pretty easy</span></code>
+            </div>
+            <p>If we wanted the text to stand by itself, we could specify that it is
+              a paragraph by enclosing it in a paragraph <span class="codeType">p</span>
+              element:</p>
+            <div class="code-container">
+              <code><span class="tagType codeType"><</span><span class="tagType codeType">p</span><span class="tagType codeType">></span><span class="codeType">HTML is pretty easy</span><span class="tagType codeType"><</span><span class="tagType codeType">/p</span><span class="tagType codeType">></span></code>
+            </div>
+            <ul>
+              <span>The anatomy of HTML's elements is:</span>
+              <li>
+                The opening tag: This consists of the name of the element (in this
+                example, p for paragraph), wrapped in opening and closing angle brackets.
+                This opening tag marks where the element begins or starts to take effect.
+                In this example, it precedes the start of the paragraph text.
+              </li>
+              <li>
+                The content: This is the content of the element. In this example, it is the paragraph text.
+              </li>
+              <li>The closing tag: This is the same as the opening tag, except that
+                it includes a forward slash before the element name. This marks where
+                the element ends. Failing to include a closing tag is a common beginner
+                error that can produce peculiar results.</li>
+            </ul>
+        </section>
+        <!--What is HTML ends-->
+        <!--Nesting Elements starts-->
+        <section class="main-section" id="Nesting_Elements">
+          <header>Nesting Elements</header>
+            <p>Elements can be placed within other elements. This is called <i>nesting</i>.
+              If we wanted to state that HTML is pretty easy, we could wrap the word <i>pretty</i>
+              in a <span class="codeType">strong</span> element, which means the word is to have
+            stronger text formating.</p>
+            <div class="code-container">
+              <code><span class="tagType codeType"><</span><span class="tagType codeType">p</span><span class="tagType codeType">></span><span class="codeType">HTML is <span class="tagType codeType"><</span><span class="tagType codeType">strong</span><span class="tagType codeType">></span>pretty<span class="tagType codeType"><</span><span class="tagType codeType">/strong</span><span class="tagType codeType">></span> easy</span><span class="tagType codeType"><</span><span class="tagType codeType">/p</span><span class="tagType codeType">></span></code>
+            </div>
+        </section>
+        <!--Nesting Elements ends-->
+        <!--Void Elements starts-->
+        <section class="main-section" id="Void_Elements">
+          <header>Void Elements</header>
+            <p>
+              Not all elements follow the pattern of an opening tag, content, and a
+              closing tag. Some elements consist of a single tag, which is typically
+              used to insert/embed something in the document. Such elements are called
+              void elements. For example, the <span class="codeType">img</span> element
+              embeds an image file onto a page:
+            </p>
+            <div class="code-container">
+              <code><span class="tagType codeType"><</span><span class="tagType codeType">img src="https://upload.wikimedia.org/wikipedia/kitty-pic.jpg" alt="Pretty cat"</span><span class="tagType codeType">></code>
+            </div>
+            <p>This would output the following:</p>
+            <div class="cat-pic">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Photo_of_a_kitten.jpg/800px-Photo_of_a_kitten.jpg" alt="Pretty cat" width="300px">
+            </div>
+        </section>
+        <!--Void Elements ends-->
+        <!--Attributes starts-->
+        <section class="main-section" id="Attributes">
+          <header>Attributes</header>
+            <p>
+              The elements also can have attributes. Attributes contain extra
+              information about the element that won't appear in the content. In
+              next example, the class attribute is an identifying name used to target
+              the element with style information.
+            </p>
+            <div class="code-container">
+              <code><span class="tagType codeType"><</span><span class="tagType codeType">p class="fact"</span><span class="tagType codeType">></span><span class="codeType">HTML is pretty easy</span><span class="tagType codeType"><</span><span class="tagType codeType">/p</span><span class="tagType codeType">></span></code>
+            </div>
+            <ul>
+              <span>An attribute should have:</span>
+              <li>
+              A space between it and the element name. (For an element with more than
+              one attribute, the attributes should be separated by spaces too.)
+              </li>
+              <li>
+                The attribute name, followed by an equal sign.
+              </li>
+              <li>An attribute value, wrapped with opening and closing quote marks.</li>
+            </ul>
+        </section>
+        <!--Attributes ends-->
+        <!--HTML Comments starts-->
+        <section class="main-section" id="HTML_Comments">
+          <header>HTML Comments</header>
+            <p>
+              HTML has a mechanism to write comments in the code. Browsers ignore
+              comments, effectively making comments invisible to the user. The purpose
+              of comments is to allow you to include notes in the code to explain your
+              logic or coding. This is very useful if you return to a code base after
+              being away for long enough that you don't completely remember it.
+              Likewise, comments are invaluable as different people are making changes and updates.
+            </p>
+            <br>
+            <p>
+              To write an HTML comment, wrap it in the special markers <span class="codeType"><</span><span class="codeType">!--</span> and <span class="codeType">--</span><span class="codeType">></span>. For example:
+            </p>
+            <div class="code-container">
+              <code>
+                <span class="tagType codeType"><</span><span class="tagType codeType">p</span><span class="tagType codeType">></span><span class="codeType">I'm not a comment</span><span class="tagType codeType"><</span><span class="tagType codeType">/p</span><span class="tagType codeType">></span>
+                <br>
+                <br>
+                <span class="codeType"><</span><span class="codeType">!--</span>
+                <span class="tagType codeType"><</span><span class="tagType codeType">p</span><span class="tagType codeType">></span><span class="codeType">I am!</span><span class="tagType codeType"><</span><span class="tagType codeType">/p</span><span class="tagType codeType">></span>
+                <span class="codeType">--</span><span class="codeType">></span>
+              </code>
+            </div>
+            <p>
+              As you can see below, only the first paragraph is displayed in the live output.
+            </p>
+            <div class="comment-example">
+              <p>I'm not a comment</p>
+              <!-- I am! -->
+            </div>
+        </section>
+        <!--HTML Comments ends-->
+        <!--Learn more about HTML starts-->
+        <section class="main-section" id="Learn_more_about_HTML">
+          <header>Learn more about HTML</header>
+            <p>Now if you want learn more about HTML and start the journy of Responsive Web Design,
+              check out the <a href="https://www.freecodecamp.org/learn/">freeCodeCamp</a> course of
+              <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Responsive Web Design</a>.
+              There you'll gonna improve the skills requieres to use this technology and much more. Good luck!</p>
+        </section>
+        <!--Learn more about HTML ends-->
+      </main>
+  </body>
+</html>
